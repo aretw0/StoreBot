@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="app_name">StoreBot</string>
+    <string name="action_settings">Settings</string>
+    <string name="btnScan">Scan</string>
+    <string name="txtbtnBarcode">Leitor de Código de Barra</string>
+
+</resources>
