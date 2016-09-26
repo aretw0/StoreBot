@@ -13,7 +13,7 @@ public class InitDB {
                 + ProdutoTable.ID + " integer primary key autoincrement,"
                 + ProdutoTable.DESCRICAO + " varchar(50),"
                 + ProdutoTable.EAN + " varchar(13),"
-                + ProdutoTable.TEMFOTO + " boolean NOT NULL default 0,"
+                + ProdutoTable.TEMFOTO + " integer NOT NULL default 0,"
                 + ProdutoTable.FOTO + " text,"
                 + ProdutoTable.DTINSERCAO + " date"
                 +")";

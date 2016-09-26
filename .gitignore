@@ -5,3 +5,7 @@
 .DS_Store
 /build
 /captures
+javac-services.0.log.lck
+projectFilesBackup/.idea/workspace.xml
+app/app.iml
+app/app.iml

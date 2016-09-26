@@ -1,6 +1,7 @@
 package br.com.r2dev2.database;
 
 import android.content.ContentValues;
+import android.database.Cursor;
 
 import java.util.Date;
 
@@ -27,6 +28,25 @@ public class ProdutoTable {
         values.put(FOTO, foto);
         values.put(DTINSERCAO, dtinsercao);
         return values;
+    }
+
+    public static boolean hasProduct(String ean, Dao crud){
+        String where = ProdutoTable.EAN + " = " + ean;
+        Cursor cursor = crud.select(ProdutoTable._TABLE, ProdutoTable.campos, where, null, null, null, null);
+
+        if (cursor.getCount() > 0)
+            return true;
+
+        return false;
+    }
+
+    public static boolean hasPhoto(String ean, Dao crud){
+        String where = ProdutoTable.EAN + " = " + ean;
+        Cursor cursor = crud.select(ProdutoTable._TABLE, ProdutoTable.campos, where, null, null, null, null);
+        if ((cursor.getInt(cursor.getColumnIndex(ProdutoTable.TEMFOTO)) == 1))
+            return true;
+
+        return false;
     }
 
 }
