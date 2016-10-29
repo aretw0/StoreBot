@@ -79,8 +79,8 @@ public class MainActivity extends AppCompatActivity {
                 // consiga os extras retornados pela intent
                 String contents = intent.getStringExtra("SCAN_RESULT");
                 String format = intent.getStringExtra("SCAN_RESULT_FORMAT");
-                formatTxt.setText("FORMAT:" + format);
-                contentTxt.setText("CONTENT:" + contents);
+                formatTxt.setText("FORMATO:" + format);
+                contentTxt.setText("CONTEÚDO:" + contents);
                 Toast toast = Toast.makeText(this, "Leitura:" + contents + " Formato:" + format, Toast.LENGTH_LONG);
                 toast.show();
             }
