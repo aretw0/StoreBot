@@ -39,12 +39,13 @@
             android:id="@+id/editCod"
             android:layout_weight="0.03" />
 
-        <ImageButton
+        <Button
+            android:text="SCAN"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:srcCompat="@android:drawable/ic_menu_search"
-            android:id="@+id/imageButton2"
-            android:layout_weight="0.03" />
+            android:id="@+id/btnScan"
+            android:layout_weight="0.03"
+            android:onClick="scanBar (CadastroActivity)" />
 
         <TextView
             android:text="Descrição"
